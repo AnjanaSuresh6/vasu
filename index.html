@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasu Love</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #ff6a6a, #ffb6b9);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .heart {
+      width: 100px;
+      height: 90px;
+      position: relative;
+      animation: pulse 1.5s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 90px;
+      border-radius: 50px 50px 0 0;
+      background: #e6005c;
+    }
+
+    .heart::before {
+      left: 100px;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    .heart::after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 4rem;
+      color: white;
+      text-shadow: 0 0 15px #fff, 0 0 30px #ff007f;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff007f;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 40px #ff1493;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+  <h1>Vasu</h1>
+</body>
+</html>
