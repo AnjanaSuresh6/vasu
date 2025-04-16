@@ -3,78 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vasu's Garden of Love</title>
+  <title>Vasu Love Pattern</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      background: linear-gradient(to top right, #d4fc79, #96e6a1);
+      background: linear-gradient(to top right, #ffd6e0, #ffe6f7);
+      font-family: 'Courier New', Courier, monospace;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      height: 100vh;
+      color: #ff0066;
       overflow: hidden;
-      position: relative;
     }
 
-    .hearts {
-      font-size: 3rem;
-      color: red;
-      animation: floatHearts 4s infinite ease-in-out;
+    pre {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      text-align: center;
+      white-space: pre-wrap;
     }
 
-    @keyframes floatHearts {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0px); }
-    }
-
-    .name {
-      font-size: 4rem;
-      color: #fff;
-      text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
-      margin-top: 20px;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #ff69b4; }
-      to { text-shadow: 0 0 20px #ff1493; }
-    }
-
-    .butterfly {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-image: url('https://i.ibb.co/vzq2FC9/butterfly.png');
-      background-size: cover;
-      animation: fly 8s infinite linear;
-    }
-
-    @keyframes fly {
-      0% { transform: translate(-100px, 0) rotate(0deg); }
-      50% { transform: translate(100vw, 200px) rotate(180deg); }
-      100% { transform: translate(-100px, 0) rotate(360deg); }
-    }
-
-    .grass {
+    .background {
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 100px;
+      height: 150px;
       background: url('https://i.ibb.co/TvwKP8g/grass.png');
       background-size: cover;
     }
   </style>
 </head>
 <body>
-  <div class="hearts">❤️ 💖 💕 💘 💓 💗</div>
-  <div class="name">Vasu</div>
-  <div class="hearts">💗 💓 💘 💕 💖 ❤️</div>
-  <div class="butterfly" style="top: 20%; left: -60px;"></div>
-  <div class="butterfly" style="top: 50%; left: -80px;"></div>
-  <div class="grass"></div>
+  <pre>
+💖💖💖💖💖💖💖💖💖💖💖
+💖💖 V       V 💖💖
+💖   A       A   💖
+💖    S     S    💖
+💖     U   U     💖
+💖      💖      💖
+💖             💖
+💖             💖
+💖             💖
+💖💖💖💖💖💖💖💖💖💖💖
+  </pre>
+  <div class="background"></div>
 </body>
 </html>
